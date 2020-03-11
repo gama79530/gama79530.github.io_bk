@@ -14,6 +14,7 @@
    - -ls
    - -r
    - -S
+   - -d
 
 1. pkill screen
 
