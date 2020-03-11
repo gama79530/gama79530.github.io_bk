@@ -8,15 +8,11 @@
 # 指令格式
 - screen [-opts] [cmd [args]]
 
-# 常用指令
-1. screen  
-常用參數
-   - -ls
-   - -r
-   - -S
-   - -d
-
-1. pkill screen
+# screen 常用參數
+1. -ls
+1. -r
+1. -S
+1. -d
 
 # 常用熱鍵
 1. ctrl-a + c
@@ -30,6 +26,10 @@
 1. ctrl-a + p
 1. ctrl-a + num (0 ~ 9)
 1. ctrl-a + H (shift-h)
+
+# 其他指令
+1. pkill screen
+
 
 # 重要路徑
 1. log路徑 : $home\screenlog.x.txt
