@@ -8,7 +8,7 @@
 - A First Course in PROBABILITY (textbook)
 
 # Catalog
-1. [Chapter 1](#Chapter&nbsp;1)
+1. [Chapter 1](#Chapter1)
 
 # Introduction
 1. 機率論是用來處理"不確定性"的理論
