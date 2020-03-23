@@ -211,7 +211,7 @@
 
 ### 15
 - model : $(\\{\\})\_{P}$
-- $\binom{k - n + n + 1 - 1}{n + 1 - 1} = \binom{k}{n}$ 
+- $\sum_{k=0}^{n}\binom{n}{k}P(k, k)$ 
 
 # Chapter&nbsp;2
 # Chapter&nbsp;3
