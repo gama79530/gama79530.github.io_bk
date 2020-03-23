@@ -98,7 +98,6 @@
 - model : $()\_{L}$
 - $(26)^{2}(10)^5$ if case insensitive.
 - $(52)^{2}(10)^5$ if case sensitive.
-
 #### (b)
 - model : $()\_{P}$
 - $P(26,2) \times P(10, 5) = 26 \times 25 \times 10 \times 9 \times 8 \times 7 \times 6$  if case insensitive.
@@ -108,7 +107,6 @@
 #### 1st ?
 - model : $()\_{P}$
 - $4!$
-
 #### 2nd ?
 - model : $(()\_{P}, ()\_{P})\_{L}$
 - $2! \times 2!$
@@ -128,7 +126,6 @@
 #### 1st ?
 - model : the number of integer solutions
 - $\binom{8 + 6 - 1}{6 - 1} = \binom{13}{5}$
-
 #### 2nd ?
 - model : $()$ + the number of integer solutions
 - $\binom{5 + 6 - 1}{6 - 1}\binom{3 + 6 - 1}{6 - 1} = \binom{10}{5}\binom{8}{5}$
@@ -167,7 +164,6 @@
   1. $(b, c, a)$
   1. $(c, a, b)$
   1. $(c, b, a)$
-
 #### (b)
 - We can classify outcomes according to the number of champions
 - The number of outcomes whose number of champions is $i$ is $\binom{n}{i}N(n - i)$
@@ -176,19 +172,46 @@
   1. Then ranking the others. 
 - The range of the number of champions is $1, \cdots, n$ 
 - Thus $N(n) = \sum_{i=1}^{n}\binom{n}{i}N(n - i)$
-
 #### (c)
 - $N(n) = \sum_{i = 1}^{n}\binom{n}{i}N(n - i) = \binom{n}{1}N(n - 1) + \cdots + \binom{n}{n}N(0) = \binom{n}{0}N(0) + \cdots + \binom{n}{n - 1}N(n - 1) = \sum_{i = 0}^{n - 1}\binom{n}{i}N(i)$
-
 #### (d)
 - $N(3) = (1)(1) + (3)(1) + (3)(3) = 13$
 - $N(4) = (1)(1) + (4)(1) + (6)(3) + (4)(13) = 75$
 
 ## 課本習題 (SELF-TEST PROBLEMS AND EXERCISES)
 ### 3
+#### (a)
+- model : $()\_{P}$
+- $P(10,3)$
+#### (b)
+- model : $()\_{P} + (\\{\\}, \\{\\})\_{P}$
+- $P(8, 3) + P(3, 3) \times \binom{2}{1}\binom{8}{2}$
+#### (c)
+- model : $()\_{P} + (\\{\\}, \\{\\})\_{P}$
+- $P(8, 3) + P(3, 3) \times \binom{8}{1}$
+#### (d)
+- model : $(\\{\\}, \\{\\})\_{P} $
+- $P(3, 3) \times \binom{9}{2}$
+#### (e)
+- model : $(\\{\\}, ()\_{P})_{L} + ()\_{p}$
+- $P(9,2) + P(9, 3)$
+
 ### 8
+#### (a)
+- model : $()\_{L}$
+- $10 \times 9^{n-1}$
+#### (b)
+- model : $(\\{\\}, ()\_{L})\_{L}$
+- $\binom{n}{i} \times 9^{n - i}$
+
 ### 14
+- model : the number of integer solutions
+- $\binom{k - n + n + 1 - 1}{n + 1 - 1} = \binom{k}{n}$ 
+- $\sum_{i=n}^{k}\binom{i - 1}{n - 1} = \binom{n - 1}{n - 1} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \binom{n}{n} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \binom{n+1}{n} + \binom{n + 1}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \cdots = \binom{k}{n}$
+
 ### 15
+- model : $(\\{\\})\_{P}$
+- $\binom{k - n + n + 1 - 1}{n + 1 - 1} = \binom{k}{n}$ 
 
 # Chapter&nbsp;2
 # Chapter&nbsp;3
