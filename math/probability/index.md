@@ -92,61 +92,59 @@
      1. $\frac{n!}{\left\(\frac{n}{2}\right\)!} \times \frac{\left\(\frac{n}{2}\right\)!}{\left\(\frac{n}{4}\right\)!} \times \cdots \frac{2}{1} = n!$
      1. 另外一種解法，第1個位置代表冠軍，之後的第$i$個位置代表的是因為輸給第$\left\lfloor\frac{i}{2}\right\rfloor$個位置的人而被淘汰的人，因此可以把問題轉換成排列問題，所以答案為$n!$
 
-## 課本習題 (PROBLEMS)
-### 1
-#### (a)
+## 課本習題 
+### PROBLEMS
+1-(a)
 - model : $()\_{L}$
 - $(26)^{2}(10)^5$ if case insensitive.
 - $(52)^{2}(10)^5$ if case sensitive.
-#### (b)
+
+1-(b)
 - model : $()\_{P}$
 - $P(26,2) \times P(10, 5) = 26 \times 25 \times 10 \times 9 \times 8 \times 7 \times 6$  if case insensitive.
 - $P(26,2) \times P(10, 5) = 52 \times 51 \times 10 \times 9 \times 8 \times 7 \times 6$  if case sensitive.
 
-### 4
-#### 1st ?
+4-1st ?
 - model : $()\_{P}$
 - $4!$
-#### 2nd ?
+
+4-2nd ?
 - model : $(()\_{P}, ()\_{P})\_{L}$
 - $2! \times 2!$
 
-### 20
-#### (a)
+20-(a)
 - model : $\\{\\} - \\{\\}$ 
 - $\binom{8}{5} - \binom{6}{3}$
-#### (b)
+
+20-(b)
 - model : $\\{\\} - (\\{\\}, \\{\\})$
 - $\binom{8}{5} - \binom{2}{1}\binom{6}{4}$
 
-### 26
+26
 - $\sum_{t_{1} + t_{2} + t_{3} = 4}\binom{4}{t_{1}, t_{2}, t_{3}}(x_{1})^{t_{1}}(2x_{2})^{t_{2}}(3x_{3})^{t_{3}} = (x_{1}^{4} + 16x_{2}^{4} + 81x_{3}^{4}) + (4)(2x_{1}^{3}x_{2} + 8x_{1}x_{2}^{3} + 3x_{1}^{3}x_{3} + 27x_{1}x_{3}^{3} + 24x_{2}^{3}x_{3} + 54x_{2}x_{3}^{3}) + (6)(4x_{1}^{2}x_{2}^{2} + 9x_{1}^{2}x_{3}^{2} + 36x_{2}^{2}x_{3}^{2}) + (12)(6x_{1}^{2}x_{2}x_{3} + 12x_{1}x_{2}^{2}x_{3} + 18x_{1}x_{2}x_{3}^{2})$
 
-### 32
-#### 1st ?
+32-1st ?
 - model : the number of integer solutions
 - $\binom{8 + 6 - 1}{6 - 1} = \binom{13}{5}$
-#### 2nd ?
+32-2nd ?
 - model : $()$ + the number of integer solutions
 - $\binom{5 + 6 - 1}{6 - 1}\binom{3 + 6 - 1}{6 - 1} = \binom{10}{5}\binom{8}{5}$
 
-
-## 課本習題 (THEORETICAL EXERCISES)
-### 5
+### THEORETICAL EXERCISES
+5
 - model : $\\{\\}$
 - $\sum_{i = k}^{n}\binom{n}{i}$
 
-### 7
+7
 - $\binom{n}{r} = \frac{n!}{(r!)(n - r)!} = \left\[\frac{(n - 1)!}{(r - 1)!(n - r - 1)!}\right\]\left\[\frac{n}{r(n-r)}\right\] = \left\[\frac{(n - 1)!}{(r - 1)!(n - r - 1)!}\right\]\left\[\frac{1}{n - r} + \frac{1}{r}\right\] = \frac{(n - 1)!}{(r - 1)!(n - r)!} + \frac{(n - 1)!}{(r!)(n - r - 1)!} = \binom{n - 1}{r - 1} + \binom{n - 1}{r}$
 
-### 11
+11
 - We can classify the ways to select $k$ number from $1, \cdots, n$ according to the maximum of selected numbers.
 - The number of ways to select $k$ numbers from $1, \cdots, n$ whose maximum is $i$ is equivalent to the number of ways to select $k - 1$ numbers from $1, \cdots, i - 1$
 - The range of maximum is $k, \cdots, n$
 - Thus $\binom{n}{k} = \sum_{i=k}^{n}\binom{i - 1}{k - 1}$
 
-### 16
-#### (a)
+16-(a)
 - $(1, 1, 1)$
   1. $\\{a, b, c\\}$
 - (1, 1, 3)
@@ -164,7 +162,8 @@
   1. $(b, c, a)$
   1. $(c, a, b)$
   1. $(c, b, a)$
-#### (b)
+
+16-(b)
 - We can classify outcomes according to the number of champions
 - The number of outcomes whose number of champions is $i$ is $\binom{n}{i}N(n - i)$
   1. Use model $(\\{\\}, ())$
@@ -172,44 +171,49 @@
   1. Then ranking the others. 
 - The range of the number of champions is $1, \cdots, n$ 
 - Thus $N(n) = \sum_{i=1}^{n}\binom{n}{i}N(n - i)$
-#### (c)
+
+16-(c)
 - $N(n) = \sum_{i = 1}^{n}\binom{n}{i}N(n - i) = \binom{n}{1}N(n - 1) + \cdots + \binom{n}{n}N(0) = \binom{n}{0}N(0) + \cdots + \binom{n}{n - 1}N(n - 1) = \sum_{i = 0}^{n - 1}\binom{n}{i}N(i)$
-#### (d)
+
+16-(d)
 - $N(3) = (1)(1) + (3)(1) + (3)(3) = 13$
 - $N(4) = (1)(1) + (4)(1) + (6)(3) + (4)(13) = 75$
 
-## 課本習題 (SELF-TEST PROBLEMS AND EXERCISES)
-### 3
-#### (a)
+### SELF-TEST PROBLEMS AND EXERCISES
+3-(a)
 - model : $()\_{P}$
 - $P(10,3)$
-#### (b)
+
+3-(b)
 - model : $()\_{P} + (\\{\\}, \\{\\})\_{P}$
 - $P(8, 3) + P(3, 3) \times \binom{2}{1}\binom{8}{2}$
-#### (c)
+
+3-(c)
 - model : $()\_{P} + (\\{\\}, \\{\\})\_{P}$
 - $P(8, 3) + P(3, 3) \times \binom{8}{1}$
-#### (d)
+
+3-(d)
 - model : $(\\{\\}, \\{\\})\_{P} $
 - $P(3, 3) \times \binom{9}{2}$
-#### (e)
+
+3-(e)
 - model : $(\\{\\}, ()\_{P})_{L} + ()\_{p}$
 - $P(9,2) + P(9, 3)$
 
-### 8
-#### (a)
+8-(a)
 - model : $()\_{L}$
 - $10 \times 9^{n-1}$
-#### (b)
+
+8-(b)
 - model : $(\\{\\}, ()\_{L})\_{L}$
 - $\binom{n}{i} \times 9^{n - i}$
 
-### 14
+14
 - model : the number of integer solutions
 - $\binom{k - n + n + 1 - 1}{n + 1 - 1} = \binom{k}{n}$ 
 - $\sum_{i=n}^{k}\binom{i - 1}{n - 1} = \binom{n - 1}{n - 1} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \binom{n}{n} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \binom{n+1}{n} + \binom{n + 1}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \cdots = \binom{k}{n}$
 
-### 15
+15
 - model : $(\\{\\})\_{P}$
 - $\sum_{k=0}^{n}\binom{n}{k}P(k, k)$ 
 
