@@ -121,10 +121,10 @@
 - $\binom{8}{5} - \binom{2}{1}\binom{6}{4}$
 
 26
-- $\sum_{t_{1} + t_{2} + t_{3} = 4}\binom{4}{t_{1}, t_{2}, t_{3}}(x_{1})^{t_{1}}(2x_{2})^{t_{2}}(3x_{3})^{t_{3}} = \\\\
-(x_{1}^{4} + 16x_{2}^{4} + 81x_{3}^{4}) + \\\\
-(4)(2x_{1}^{3}x_{2} + 8x_{1}x_{2}^{3} + 3x_{1}^{3}x_{3} + 27x_{1}x_{3}^{3} + 24x_{2}^{3}x_{3} + 54x_{2}x_{3}^{3}) + \\\\
-(6)(4x_{1}^{2}x_{2}^{2} + 9x_{1}^{2}x_{3}^{2} + 36x_{2}^{2}x_{3}^{2}) + \\\\
+- $\sum_{t_{1} + t_{2} + t_{3} = 4}\binom{4}{t_{1}, t_{2}, t_{3}}(x_{1})^{t_{1}}(2x_{2})^{t_{2}}(3x_{3})^{t_{3}} = \\
+(x_{1}^{4} + 16x_{2}^{4} + 81x_{3}^{4}) + \\
+(4)(2x_{1}^{3}x_{2} + 8x_{1}x_{2}^{3} + 3x_{1}^{3}x_{3} + 27x_{1}x_{3}^{3} + 24x_{2}^{3}x_{3} + 54x_{2}x_{3}^{3}) + \\
+(6)(4x_{1}^{2}x_{2}^{2} + 9x_{1}^{2}x_{3}^{2} + 36x_{2}^{2}x_{3}^{2}) + \\
 (12)(6x_{1}^{2}x_{2}x_{3} + 12x_{1}x_{2}^{2}x_{3} + 18x_{1}x_{2}x_{3}^{2})$
 
 32-1st ?
@@ -140,9 +140,9 @@
 - $\sum_{i = k}^{n}\binom{n}{i}$
 
 7
-- $\binom{n}{r} = \frac{n!}{(r!)(n - r)!} = \\\\
-\left\[\frac{(n - 1)!}{(r - 1)!(n - r - 1)!}\right\]\left\[\frac{n}{r(n-r)}\right\] = \\\\
-\left\[\frac{(n - 1)!}{(r - 1)!(n - r - 1)!}\right\]\left\[\frac{1}{n - r} + \frac{1}{r}\right\] = \\\\
+- $\binom{n}{r} = \frac{n!}{(r!)(n - r)!} = \\
+\left\[\frac{(n - 1)!}{(r - 1)!(n - r - 1)!}\right\]\left\[\frac{n}{r(n-r)}\right\] = \\
+\left\[\frac{(n - 1)!}{(r - 1)!(n - r - 1)!}\right\]\left\[\frac{1}{n - r} + \frac{1}{r}\right\] = \\
 \frac{(n - 1)!}{(r - 1)!(n - r)!} + \frac{(n - 1)!}{(r!)(n - r - 1)!} = \binom{n - 1}{r - 1} + \binom{n - 1}{r}$
 
 11
@@ -180,8 +180,8 @@
 - Thus $N(n) = \sum_{i=1}^{n}\binom{n}{i}N(n - i)$
 
 16-(c)
-- $N(n) = \sum_{i = 1}^{n}\binom{n}{i}N(n - i) = \\\\
-\binom{n}{1}N(n - 1) + \cdots + \binom{n}{n}N(0) = \\\\
+- $N(n) = \sum_{i = 1}^{n}\binom{n}{i}N(n - i) = \\
+\binom{n}{1}N(n - 1) + \cdots + \binom{n}{n}N(0) = \\
 \binom{n}{0}N(0) + \cdots + \binom{n}{n - 1}N(n - 1) = \sum_{i = 0}^{n - 1}\binom{n}{i}N(i)$
 
 16-(d)
@@ -220,9 +220,9 @@
 14
 - model : the number of integer solutions
 - $\binom{k - n + n + 1 - 1}{n + 1 - 1} = \binom{k}{n}$ 
-- $\sum_{i=n}^{k}\binom{i - 1}{n - 1} = \\\\
-\binom{n - 1}{n - 1} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \\\\
-\binom{n}{n} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \\\\
+- $\sum_{i=n}^{k}\binom{i - 1}{n - 1} = \\
+\binom{n - 1}{n - 1} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \\
+\binom{n}{n} + \binom{n}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \\
 \binom{n+1}{n} + \binom{n + 1}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \cdots = \binom{k}{n}$
 
 15
