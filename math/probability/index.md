@@ -9,12 +9,12 @@
 
 # Catalog
 1. [Chapter 1](#chapter-1)
-1. [Chapter 2](#chapter2)
-1. [Chapter 3](#chapter3)
-1. [Chapter 4](#chapter4)
-1. [Chapter 5](#chapter5)
-1. [Chapter 6](#chapter6)
-1. [Chapter 7](#chapter7)
+1. [Chapter 2](#chapter-2)
+1. [Chapter 3](#chapter-3)
+1. [Chapter 4](#chapter-4)
+1. [Chapter 5](#chapter-5)
+1. [Chapter 6](#chapter-6)
+1. [Chapter 7](#chapter-7)
 
 # Introduction
 1. 機率論是用來處理"不確定性"的理論
@@ -130,6 +130,7 @@ $(12)(6x_{1}^{2}x_{2}x_{3} + 12x_{1}x_{2}^{2}x_{3} + 18x_{1}x_{2}x_{3}^{2})$
 32-1st ?
 - model : the number of integer solutions
 - $\binom{8 + 6 - 1}{6 - 1} = \binom{13}{5}$
+
 32-2nd ?
 - model : $()$ + the number of integer solutions
 - $\binom{5 + 6 - 1}{6 - 1}\binom{3 + 6 - 1}{6 - 1} = \binom{10}{5}\binom{8}{5}$
@@ -229,9 +230,9 @@ $\binom{n+1}{n} + \binom{n + 1}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \cdots 
 - model : $(\\{\\})\_{P}$
 - $\sum_{k=0}^{n}\binom{n}{k}P(k, k)$ 
 
-# Chapter&nbsp;2
-# Chapter&nbsp;3
-# Chapter&nbsp;4
-# Chapter&nbsp;5
-# Chapter&nbsp;6
-# Chapter&nbsp;7
+# Chapter 2
+# Chapter 3
+# Chapter 4
+# Chapter 5
+# Chapter 6
+# Chapter 7
