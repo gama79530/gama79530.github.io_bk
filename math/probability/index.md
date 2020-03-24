@@ -132,7 +132,7 @@ $(12)(6x_{1}^{2}x_{2}x_{3} + 12x_{1}x_{2}^{2}x_{3} + 18x_{1}x_{2}x_{3}^{2})$
 - $\binom{8 + 6 - 1}{6 - 1} = \binom{13}{5}$
 
 32-2nd ?
-- model : $()$ + the number of integer solutions
+- model : $()\_{L}$ + the number of integer solutions
 - $\binom{5 + 6 - 1}{6 - 1}\binom{3 + 6 - 1}{6 - 1} = \binom{10}{5}\binom{8}{5}$
 
 ### THEORETICAL EXERCISES
