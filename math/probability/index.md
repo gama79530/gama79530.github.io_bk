@@ -100,7 +100,8 @@
      1. $\frac{n!}{\(n / 2\)!} \times \frac{(n / 2)!}{(n /4)!} \times \cdots \frac{2}{1} = n!$
      1. 另外一種解法，第$1$個位置代表冠軍，之後的第$i$個位置代表的是因為輸給第$i - 2^{\lfloor \lg (i - 1) \rfloor}$個位置的人而被淘汰的人，因此可以把問題轉換成排列問題，所以答案為$n!$
 
-## 解題心得
+## 課本習題 
+### 解題心得
 1. 各個model經常對應到的問題類型
    - List : 選擇可重複
    - Permutation : 排列問題、配對問題
@@ -110,7 +111,6 @@
 1. 使用怎樣的標記作為選擇的區分編碼會影響對問題類型的判斷
 1. 可以試著用遞迴的方式思考解法
 
-## 課本習題 
 ### PROBLEMS
 1-(a)
 - model : $()\_{L}$
@@ -292,15 +292,15 @@ $\binom{n+1}{n} + \binom{n + 1}{n - 1} + \cdots + \binom{k - 1}{n - 1} = \cdots 
   1. 對於任意兩個事件$A$,$B$，$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
   1. 對於事件$A_{1}, \cdots, A_{n}$，$P(A_{1} \cup \cdots \cup A_{n}) \leq P(A_{1}) + \cdots + P(A_{n})$
   1. 排容原理 : 對任意事件$A_{1}, \cdots, A_{n}$  
-     $P(A_{1} \cup \cdots \cup A_{n}) = \sum_{i = 1}^{n}\left\[\sum_{1 \leq t_{1} < \cdots < t_{i} \leq n}(-1)^{i+1}P(A_{t_{1}} \cap \cdots \cap A_{t_{i}})\right\]$
-  1. 若$A_{1}, A_{2}, \cdots$是一組$\Omega$的分割(partition)，即$\cup_{i = 1}^{\infty}A_{i} = \Omega$且$A_{1}, A_{2}, \cdots$兩倆互斥，則$P(A) = \sum_{i = 1}^{\infty}P(A \cap A_{i})$
+     $P(\bigcup_{i=1}^{n}A_{i}) = \sum_{i = 1}^{n}\left\[\sum_{1 \leq t_{1} < \cdots < t_{i} \leq n}(-1)^{i+1}P(\bigcap_{j=1}^{i} A_{t_{j}})\right\]$
+  1. 若$A_{1}, A_{2}, \cdots$是一組$\Omega$的分割(partition)，即$\bigcup_{i = 1}^{\infty}A_{i} = \Omega$且$A_{1}, A_{2}, \cdots$兩倆互斥，則$P(A) = \sum_{i = 1}^{\infty}P(A \cap A_{i})$
   
 ## 離散型樣本空間測度
 - 定義
   1. $\Omega = \\{\omega_{1}, \omega_{2}, \cdots\\}$
   1. 給定一個函數$p(\omega) \geq 0$, for all $\omega \in \Omega$ 以及 $\sum_{\omega \in \Omega}p(\omega) = 1$
   1. 定義$P(A) = \sum_{\omega \in A}p(\omega)$
-  1. 這個定義方式把原本需要定義$2^{\left \\| \Omega \right \\|} -1$個值縮減到只需要定義 $\left \\| \Omega \right \\|$個值
+  1. 這個定義方式把原本需要定義$2^{\left &#124; \Omega \right &#124;} -1$個值縮減到只需要定義 $\left &#124; \Omega \right &#124;$個值
 
 ## 連續型樣本空間測度
 - 定義
@@ -463,11 +463,27 @@ $\frac{r\binom{m}{k - r}\left\[\frac{n!}{r!(n - r)!}\right\]}{k\left\[\frac{(m +
 - $\frac{1}{\binom{30}{10, 20}}$
 
 # Chapter 3
+## 條件機率
+1. 任意事件的機率值應該要隨著新資訊的獲得而改變
+1. 數學定義 : 給定兩個事件$A, B \subseteq \Omega$，在給定事件A之下發生B的條件機率為$P(B &#124; A) = \frac{P(AB)}{P(A)}$
+   - 傳統方法 : $P(B &#124; A) = \frac{(\\# AB) / (\\# \Omega)}{(\\# A) / (\\# \Omega)} = \frac{\\# AB}{\\# A}$
+1. 在給定事件A發生的狀況下
+   - 樣本空間$\Omega \rightarrow A$
+   - 事件$B \rightarrow AB$
+
+## 課本習題 
+### 解題心得
+### PROBLEMS
+### THEORETICAL EXERCISES
+### SELF-TEST PROBLEMS AND EXERCISES
+
 # Chapter 4
 # Chapter 5
 # Chapter 6
 # Chapter 7
 
+## 課本習題 
+### 解題心得
 ### PROBLEMS
 ### THEORETICAL EXERCISES
 ### SELF-TEST PROBLEMS AND EXERCISES
