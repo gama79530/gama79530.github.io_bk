@@ -465,20 +465,11 @@ $\frac{r\binom{m}{k - r}\left\[\frac{n!}{r!(n - r)!}\right\]}{k\left\[\frac{(m +
 # Chapter 3
 ## 條件機率
 1. 任意事件的機率值應該要隨著新資訊的獲得而改變
-1. 數學定義 : 給定兩個事件$A, B \subseteq \Omega$，在事件A發生之下發生B的條件機率為$P(B &#124; A) = \frac{P(AB)}{P(A)}$
-   - 必要條件$P(A) \neq 0$
+1. 數學定義 : 給定兩個事件$A, B \subseteq \Omega$，在給定事件A之下發生B的條件機率為$P(B &#124; A) = \frac{P(AB)}{P(A)}$
    - 傳統方法 : $P(B &#124; A) = \frac{(\\# AB) / (\\# \Omega)}{(\\# A) / (\\# \Omega)} = \frac{\\# AB}{\\# A}$
-1. 在事件A發生的狀況下
+1. 在給定事件A發生的狀況下
    - 樣本空間$\Omega \rightarrow A$
    - 事件$B \rightarrow AB$
-1. 條件機率$P(\cdot &#124; A)$可以視作是一個定義在$2^{\Omega}$上的機率測度
-   - 滿足機率3公理
-   - 滿足所有第二章推導出來的機率測度的重要特性
-
-## 條件機率公式
-1. $P(AB) = P(A)P(B &#124; A)$
-1. $P(B) = P(A)P(B &#124; A) + P(A^{c})P(B &#124; A^{c})$
-1. $P(A &#124; B) = \frac{P(A)P(B &#124; A)}{P(A)P(B &#124; A) + P(A^{c})P(B &#124; A^{c})}$
 
 ## 課本習題 
 ### 解題心得
