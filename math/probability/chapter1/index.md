@@ -3,7 +3,7 @@
     MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
 </script>
 
-{% include_relative math/probability/index.md %}
+{% include math\probability\index.md %}
 
 # Chapter 1
 ## Introduction
