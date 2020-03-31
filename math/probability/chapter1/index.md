@@ -8,13 +8,13 @@
 - A First Course in PROBABILITY (textbook)
 
 # Catalog
-1. [Chapter 1](\math\probability\chapter1)
-1. [Chapter 2](\math\probability\chapter2)
-1. [Chapter 3](\math\probability\chapter3)
-1. [Chapter 4](\math\probability\chapter4)
-1. [Chapter 5](\math\probability\chapter5)
-1. [Chapter 6](\math\probability\chapter6)
-1. [Chapter 7](\math\probability\chapter7)
+1. [Chapter 1](math\probability\chapter1)
+1. [Chapter 2](math\probability\chapter2)
+1. [Chapter 3](math\probability\chapter3)
+1. [Chapter 4](math\probability\chapter4)
+1. [Chapter 5](math\probability\chapter5)
+1. [Chapter 6](math\probability\chapter6)
+1. [Chapter 7](math\probability\chapter7)
 
 # Chapter 1
 ## Introduction
