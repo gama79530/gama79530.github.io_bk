@@ -71,8 +71,8 @@
 - 定義
   1. $\Omega = $  
   $\\{\omega_{1}, \omega_{2}, \cdots\\}$
-  1. 給定一個函數$p(\omega) \geq 0$, for all $\omega \in \Ome$  
-  $ga$ 以及 $\sum_{\omega \in \Omega}p(\omega) = 1$
+  1. 給定一個函數$p(\omega) \geq 0$, for all $\omega \in \Omega$  
+  以及 $\sum_{\omega \in \Omega}p(\omega) = 1$
   1. 定義$P(A) = \sum_{\omega \in A}p(\omega)$
   1. 這個定義方式把原本需要定義$2^{\left &#124; \Omega \right &#124;} -1$個值縮減到只需要定義 $\left &#124; \Omega \right &#124;$個值
 
