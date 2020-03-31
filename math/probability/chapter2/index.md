@@ -69,8 +69,7 @@
   
 ## 離散型樣本空間測度
 - 定義
-  1. $\Omega = $  
-  $\\{\omega_{1}, \omega_{2}, \cdots\\}$
+  1. $\Omega = \\{\omega_{1}, \omega_{2}, \cdots\\}$
   1. 給定一個函數$p(\omega) \geq 0$, for all $\omega \in \Omega$  
   以及 $\sum_{\omega \in \Omega}p(\omega) = 1$
   1. 定義$P(A) = \sum_{\omega \in A}p(\omega)$
