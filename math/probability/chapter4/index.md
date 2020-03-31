@@ -15,3 +15,10 @@
 1. [Chapter 5](math\probability\chapter5)
 1. [Chapter 6](math\probability\chapter6)
 1. [Chapter 7](math\probability\chapter7)
+
+## 重要範例
+## 解題心得
+## 課本習題 
+### PROBLEMS
+### THEORETICAL EXERCISES
+### SELF-TEST PROBLEMS AND EXERCISES
