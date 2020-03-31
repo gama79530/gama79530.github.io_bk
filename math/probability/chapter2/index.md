@@ -63,13 +63,16 @@
   1. 對於任意兩個事件$A$,$B$，$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
   1. 對於事件$A_{1}, \cdots, A_{n}$，$P(A_{1} \cup \cdots \cup A_{n}) \leq P(A_{1}) + \cdots + P(A_{n})$
   1. 排容原理 : 對任意事件$A_{1}, \cdots, A_{n}$  
-     $P(\bigcup_{i=1}^{n}A_{i}) = \sum_{i = 1}^{n}\left\[\sum_{1 \leq t_{1} < \cdots < t_{i} \leq n}(-1)^{i+1}P(\bigcap_{j=1}^{i} A_{t_{j}})\right\]$
+     $P(\bigcup_{i=1}^{n}A_{i}) = $  
+     $\sum_{i = 1}^{n}\left\[\sum_{1 \leq t_{1} < \cdots < t_{i} \leq n}(-1)^{i+1}P(\bigcap_{j=1}^{i} A_{t_{j}})\right\]$
   1. 若$A_{1}, A_{2}, \cdots$是一組$\Omega$的分割(partition)，即$\bigcup_{i = 1}^{\infty}A_{i} = \Omega$且$A_{1}, A_{2}, \cdots$兩倆互斥，則$P(A) = \sum_{i = 1}^{\infty}P(A \cap A_{i})$
   
 ## 離散型樣本空間測度
 - 定義
-  1. $\Omega = \\{\omega_{1}, \omega_{2}, \cdots\\}$
-  1. 給定一個函數$p(\omega) \geq 0$, for all $\omega \in \Omega$ 以及 $\sum_{\omega \in \Omega}p(\omega) = 1$
+  1. $\Omega = $  
+  $\\{\omega_{1}, \omega_{2}, \cdots\\}$
+  1. 給定一個函數$p(\omega) \geq 0$, for all $\omega \in \Ome$  
+  $ga$ 以及 $\sum_{\omega \in \Omega}p(\omega) = 1$
   1. 定義$P(A) = \sum_{\omega \in A}p(\omega)$
   1. 這個定義方式把原本需要定義$2^{\left &#124; \Omega \right &#124;} -1$個值縮減到只需要定義 $\left &#124; \Omega \right &#124;$個值
 
@@ -195,8 +198,10 @@ $\\{\\{1\\}, \\{2\\}, \\{3\\}, \\{4\\}\\}$
   1. $n + 1$所在的子集合有$t$個元素($1 \leq t \leq n$)  
   每一個分類的計數 : $\binom{n}{t - 1}T_{n + 1 - t}$
   1. $T_{n + 1} = 1 + \sum_{t = 1}^{n}\binom{n}{t - 1}T_{n + 1 - t}$
-  1. 令$k = n + 1 - t$，則$t = n + 1 - k \Rightarrow 1 \leq n + 1 - k \leq n \Rightarrow 1 \leq k \leq n$  
-  1. 因此$T_{n + 1} = 1 + \sum_{k = 1}^{n}\binom{n}{n - k}T_{k} = 1 + \sum_{k = 1}^{n}\binom{n}{k}T_{k}$  
+  1. 令$k = n + 1 - t$，則$t = n + 1 - k \Rightarrow 1 \leq n + 1 - k \leq n \Rightarrow $  
+  $1 \leq k \leq n$  
+  1. 因此$T_{n + 1} = 1 + \sum_{k = 1}^{n}\binom{n}{n - k}T_{k} = $  
+  $1 + \sum_{k = 1}^{n}\binom{n}{k}T_{k}$  
   
 11
 - $1 \geq P(E \cup F) = P(E) + P(F) - P(EF) \Rightarrow $  
