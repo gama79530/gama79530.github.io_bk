@@ -63,8 +63,8 @@
   1. 對於任意兩個事件$A$,$B$，$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
   1. 對於事件$A_{1}, \cdots, A_{n}$，$P(A_{1} \cup \cdots \cup A_{n}) \leq P(A_{1}) + \cdots + P(A_{n})$
   1. 排容原理 : 對任意事件$A_{1}, \cdots, A_{n}$  
-     $P(\bigcup_{i=1}^{n}A_{i}) = $  
-     $\sum_{i = 1}^{n}\left\[\sum_{1 \leq t_{1} < \cdots < t_{i} \leq n}(-1)^{i+1}P(\bigcap_{j=1}^{i} A_{t_{j}})\right\]$
+     $P(\bigcup_{i=1}^{n}A_{i}) = \sum_{i = 1}^{n}\left\[\sum_{1 \leq t_{1} < \cdots < t_{i} \leq n}\right.$  
+     $\left.(-1)^{i+1}P(\bigcap_{j=1}^{i} A_{t_{j}})\right\]$
   1. 若$A_{1}, A_{2}, \cdots$是一組$\Omega$的分割(partition)，即$\bigcup_{i = 1}^{\infty}A_{i} = \Omega$且$A_{1}, A_{2}, \cdots$兩倆互斥，則$P(A) = \sum_{i = 1}^{\infty}P(A \cap A_{i})$
   
 ## 離散型樣本空間測度
