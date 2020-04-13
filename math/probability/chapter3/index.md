@@ -264,19 +264,42 @@ $\left\(\frac{7}{14}\right\)\left\(\frac{6}{13}\right\)\left\(\frac{5}{12}\right
 $\left\(\frac{7}{14}\right\)\left\(\frac{6}{13}\right\)\left\(\frac{5}{12}\right\)$
 
 43
-- 
+- $A_{1}$ : select 2 heads coin  
+$A_{2}$ : select fair coin  
+$A_{3}$ : select bias coin  
+$B$ : flip head
+- $P(A_{1} &#124; B) = \frac{P(B &#124; A_{1})P(A_{1})}{P(B &#124; A_{1})P(A_{1}) + P(B &#124; A_{2})P(A_{2}) + P(B &#124; A_{3})P(A_{3})} = $  
+$\frac{(1)(1 / 3)}{(1)(1 / 3) + (1 / 2)(1 / 3) + (0.75)(1 / 3)}$
+
 48
-- 
+- $A$ : select cabinet A  
+$B$ : select cabinet B  
+$C$ : find silver coin
+- $P(A &#124; C) = \frac{P(C &#124; A)P(A)}{P(C &#124; A)P(A) + P(C &#124; B)P(B)} = \frac{(1)(1 / 2)}{(1)(1 / 2) + (1 / 2)(1 / 2)}$
+
 65
-- 
+- $H$ : husband give correct answer  
+$W$ : wife give correct answer  
+$C$ : choose husband's answer  
+$A$ : they have common answer  
+$E$ : The final answer is correct
+- $P(E &#124; A) = \frac{P(EA)}{P(A)} = \frac{P(HW)}{P(HW) + P(H^{c}W^{c})} = \frac{(0.6)^{2}}{(0.6)^{2} + (0.4)^{2}}$
+- $P(E &#124; A^{c}) = \frac{P(EA^{c})}{P(A^{c})} = \frac{P(EHW^{c}) + P(EH^{c}W)}{P(HW^{c}) + P(H^{c}W)} = $  
+$\frac{P(C &#124; HW^{c})P(HW^{c}) + P(C^{c} &#124; H^{c}W)P(H^{c}W)}{P(HW^{c}) + P(H^{c}W)} = $  
+$\frac{(1/2)(0.6)(0.4) + (1/2)(0.4)(0.6)}{(0.6)(0.4) + (0.4)(0.6)}$
+
 67
 - 
+
 69
 - 
+
 72
 - 
+
 89
 - 
+
 ### THEORETICAL EXERCISES
 1
 - 
