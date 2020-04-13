@@ -17,6 +17,7 @@
 1. [Chapter 7](..\chapter7)
 
 # Chapter 3
+
 ## 條件機率
 1. 任意事件的機率值應該要隨著新資訊的獲得而改變
 1. 數學定義 : 給定兩個事件$A, B \subseteq \Omega$，在給定事件A之下發生B的條件機率為$P(B &#124; A) = \frac{P(AB)}{P(A)}$
@@ -143,7 +144,162 @@ $P(A_{3} &#124; A_{1}A_{2}) \times \cdots \times P(A_{m} &#124; A_{1}A_{2}\cdots
    - 互斥分割
    - 計算過程中大多是使用交集，如果是要計算聯集可使用補集手段做轉換
 
-## 課本習題 
+## 課本習題
 ### PROBLEMS
+2  
+- $i = 2$ : $0$  
+$i = 3$ : $0$  
+$i = 4$ : $0$  
+$i = 5$ : $0$  
+$i = 6$ : $0$  
+$i = 7$ : $\frac{1}{6}$  
+$i = 8$ : $\frac{1}{5}$  
+$i = 9$ : $\frac{1}{4}$  
+$i = 10$ : $\frac{1}{3}$  
+$i = 11$ : $\frac{1}{2}$  
+$i = 12$ : $1$  
+
+4
+- $i = 2$ : $0$  
+$i = 3$ : $0$  
+$i = 4$ : $0$  
+$i = 5$ : $0$  
+$i = 6$ : $0$  
+$i = 7$ : $\frac{2}{6}$  
+$i = 8$ : $\frac{2}{5}$  
+$i = 9$ : $\frac{2}{4}$  
+$i = 10$ : $\frac{2}{3}$  
+$i = 11$ : $\frac{2}{2}$  
+$i = 12$ : $1$  
+
+6
+- (with replacement) : $\frac{2}{4}$
+- (without replacement) : $\frac{2}{4}$
+
+10
+- $\frac{11}{50}$
+
+21-(a)
+- $\frac{212 + 36}{212 + 36 + 198 + 54} = \frac{248}{500}$
+
+21-(b)
+- $\frac{54}{198 + 54} = \frac{54}{252}$
+
+21-(c)
+- $\frac{36}{212 + 36} = \frac{36}{248}$
+
+23-(a)
+- $W$ : white ball in urn 1 is selected  
+$R$ : red ball in urn 1 is selected  
+$E$ : select a white ball from urn 2
+- $P(E) = P(E &#124; W)P(W) + P(E &#124; R)P(R) = $  
+$\left\(\frac{2}{3}\right\)\left\(\frac{1}{3}\right\) + \left\(\frac{1}{3}\right\)\left\(\frac{2}{3}\right\) = \frac{4}{9}$
+
+23-(b)
+- $P(W &#124; E) = P(E &#124; W)\left\(\frac{P(W)}{P(E)}\right\) = \left\(\frac{2}{3}\right\)\left\(\frac{1/3}{4/9}\right\) = \frac{2}{4}$
+
+25
+- $A$ : a person's age is over 50  
+$B$ : a person is walk along street
+- According to hint :  
+$P(A) = p$, $P(B &#124; A^{c}) = \alpha_{1}$  
+$P(B &#124; A) = \alpha_{2}$
+- This method get an estimate for $P(A &#124; B)$
+- $P(A &#124; B) = \frac{P(B &#124; A)P(A)}{P(B &#124; A)P(A) + P(B &#124; A^{c})P(A^{c})} = \frac{\alpha_{2}p}{\alpha_{2}p + \alpha_{1}(1 - p)}$
+- This method hopes $P(A &#124; B) = P(A)$
+- $\left\[p = \frac{\alpha_{2}p}{\alpha_{2}p + \alpha_{1}(1 - p)}\right\] \equiv \left\[\alpha_{2} = \alpha_{2}p + \alpha_{1}(1 - p)\right\] \equiv \left\[\alpha_{2} = \alpha_{1}\right\]$
+
+33-(a)
+- $1 - [(0.7)(0.3) + (0.3)(0.1)] = 1 - 0.24 = 0.76$
+
+33-(b)
+- $\frac{(0.7)(1 - 0.3)}{0.76} = \frac{49}{76}$
+
+36
+- $W$ : the person is woman  
+$A$ : the resignation person belongs to store A  
+$B$ : the resignation person belongs to store B  
+$C$ : the resignation person belongs to store C
+- According to the problem statement :  
+$P(A &#124; W) = P(A)$  
+$P(B &#124; W) = P(B)$  
+$P(C &#124; W) = P(C)$  
+- $P(C &#124; W) = P(C) = \frac{(0.7)(100 / 225)}{(0.5)(50 / 225) + (0.6)(75 / 225) + (0.7)(100 / 225)}$
+
+39
+- $A$ : a person is accident prone  
+$A_{1}$ : 1st year has accident  
+$A_{2}$ : 2nd year has accident
+- $P(A_{2} &#124; A_{1}^{c}) = \frac{P(A_{2}A_{1}^{c})}{P(A_{1}^{c})} = \frac{P(A_{2}A_{1}^{c} &#124; A)P(A) + P(A_{2}A_{1}^{c} &#124; A^{c})P(A^{c})}{P(A_{1}^{c} &#124; A)P(A) + P(A_{1}^{c} &#124; A^{c})P(A^{c})} = $  
+$\frac{P(A_{2} &#124; A)P(A_{1}^{c} &#124; A)P(A) + P(A_{2} &#124; A^{c})P(A_{1}^{c} &#124; A^{c})P(A^{c})}{P(A_{1}^{c} &#124; A)P(A) + P(A_{1}^{c} &#124; A^{c})P(A^{c})} = $  
+$\frac{(0.4)(0.6)(0.3) + (0.2)(0.8)(0.7)}{(0.6)(0.3) + (0.8)(0.7)} = \frac{184}{740}$
+
+40-(a)
+- $W_{1}$ : draw white ball at 1st  
+$W_{2}$ : draw white ball at 2nd  
+$W_{3}$ : draw white ball at 3rd  
+$E_{0}$ : $0$ white ball in these 3 sample
+- $P(E_{0}) = P(W_{1}^{c}W_{2}^{c}W_{3}^{c}) = P(W_{3}^{c} &#124; W_{1}^{c}W_{2}^{c})P(W_{2}^{c} &#124; W_{1}^{c})P(W_{1}^{c}) = $  
+$\left\(\frac{9}{15}\right\)\left\(\frac{8}{13}\right\)\left\(\frac{7}{12}\right\)$
+
+40-(b)
+- $E_{1}$ : $0$ white ball in these 3 sample
+- $P(E_{1}) = P(W_{1}^{c}W_{2}^{c}W_{3}) + P(W_{1}^{c}W_{2}W_{3}^{c}) + P(W_{1}W_{2}^{c}W_{3}^{c}) = $  
+$P(W_{3} &#124; W_{1}^{c}W_{2}^{c})P(W_{2}^{c} &#124; W_{1}^{c})P(W_{1}^{c}) + $  
+$P(W_{3}^{c} &#124; W_{1}^{c}W_{2})P(W_{2} &#124; W_{1}^{c})P(W_{1}^{c}) + $  
+$P(W_{3}^{c} &#124; W_{1}W_{2}^{c})P(W_{2}^{c} &#124; W_{1})P(W_{1}) = $  
+$\left\(\frac{5}{14}\right\)\left\(\frac{8}{13}\right\)\left\(\frac{7}{12}\right\) + \left\(\frac{8}{14}\right\)\left\(\frac{5}{13}\right\)\left\(\frac{7}{12}\right\) + \left\(\frac{8}{14}\right\)\left\(\frac{7}{13}\right\)\left\(\frac{5}{12}\right\)$
+
+40-(c)
+- $E_{2}$ : $0$ white ball in these 3 sample
+- $P(E_{2}) = P(W_{1}W_{2}W_{3}^{c}) + P(W_{1}W_{2}^{c}W_{3}) + P(W_{1}^{c}W_{2}W_{3}) = $  
+$P(W_{3}^{c} &#124; W_{1}W_{2})P(W_{2} &#124; W_{1})P(W_{1}) + $  
+$P(W_{3} &#124; W_{1}W_{2}^{c})P(W_{2}^{c} &#124; W_{1})P(W_{1}) + $  
+$P(W_{3} &#124; W_{1}^{c}W_{2})P(W_{2} &#124; W_{1}^{c})P(W_{1}^{c}) = $  
+$\left\(\frac{7}{14}\right\)\left\(\frac{6}{13}\right\)\left\(\frac{5}{12}\right\) + \left\(\frac{6}{14}\right\)\left\(\frac{7}{13}\right\)\left\(\frac{5}{12}\right\) + \left\(\frac{6}{14}\right\)\left\(\frac{5}{13}\right\)\left\(\frac{7}{12}\right\)$
+
+40-(d)
+- $E_{3}$ : $0$ white ball in these 3 sample
+- $P(E_{3}) = P(W_{1}W_{2}W_{3}) = P(W_{3} &#124; W_{1}W_{2})P(W_{2} &#124; W_{1})P(W_{1}) = $  
+$\left\(\frac{7}{14}\right\)\left\(\frac{6}{13}\right\)\left\(\frac{5}{12}\right\)$
+
+43
+- 
+48
+- 
+65
+- 
+67
+- 
+69
+- 
+72
+- 
+89
+- 
 ### THEORETICAL EXERCISES
+1
+- 
+4
+- 
+5
+- 
+9
+- 
+18
+- 
+21
+- 
 ### SELF-TEST PROBLEMS AND EXERCISES
+5
+- 
+7
+- 
+13
+- 
+12
+- 
+17
+- 
+28
+- 
