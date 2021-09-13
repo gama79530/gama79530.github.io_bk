@@ -1,5 +1,5 @@
 # 學科
-1. [機率](courses\probability)
+1. [機率](courses\Probability)
 2. [訊號處理](courses\Digital_Signal_Processing)
 
 # 工具 (Linux)
