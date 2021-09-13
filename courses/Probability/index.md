@@ -9,10 +9,10 @@
 
 # Catalog
 1. [Probability](\courses\Probability)
-1. [Chapter 1](chapter1)
-1. [Chapter 2](chapter2)
-1. [Chapter 3](chapter3)
-1. [Chapter 4](chapter4)
-1. [Chapter 5](chapter5)
-1. [Chapter 6](chapter6)
-1. [Chapter 7](chapter7)
+1. [Chapter 1](\courses\Probability\chapter1)
+1. [Chapter 2](\courses\Probability\chapter2)
+1. [Chapter 3](\courses\Probability\chapter3)
+1. [Chapter 4](\courses\Probability\chapter4)
+1. [Chapter 5](\courses\Probability\chapter5)
+1. [Chapter 6](\courses\Probability\chapter6)
+1. [Chapter 7](\courses\Probability\chapter7)
