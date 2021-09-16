@@ -36,6 +36,9 @@
         sudo apt-get install filezilla # Filezilla
         sudo apt-get install -y openssh-server # As ssh server
         sudo service ssh status # check ssh server state
+        sudo systemctl stop cups-browsed # 關閉自動搜尋網路印表機
+        sudo systemctl disable cups-browsed
+
 
         # 安裝 cuda 11.2 + cudnn #
         # 先安裝GPU Driver
