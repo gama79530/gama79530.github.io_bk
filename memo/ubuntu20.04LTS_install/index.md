@@ -78,6 +78,9 @@
 - chrome
 - vscode
 
+## Others
+- tensorflow 2.6.0
+
 ## 參考資料
 
 - [NVIDIA Docker support](https://github.com/NVIDIA/nvidia-docker)
