@@ -5,4 +5,4 @@
 # 工具 (Linux)
 1. [Docker 指令](memo\docker)
 1. [Screen](memo\screen)
-1. [ubuntu OS 安裝](memo\ubuntu_install)
+1. [ubuntu OS 安裝](memo\ubuntu20.04LTS_install)
