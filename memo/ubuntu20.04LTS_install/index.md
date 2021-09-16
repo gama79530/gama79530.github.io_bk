@@ -34,6 +34,8 @@
         sudo ntpdate time.windows.com
         sudo hwclock --localtime --systohc
         sudo apt-get install filezilla # Filezilla
+        sudo apt-get install -y openssh-server # As ssh server
+        sudo service ssh status # check ssh server state
 
         # 安裝 cuda 11.2 + cudnn #
         # 先安裝GPU Driver
