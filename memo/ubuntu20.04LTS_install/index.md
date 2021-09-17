@@ -41,7 +41,8 @@
 
 
         # 安裝 cuda 11.2 + cudnn #
-        # 先安裝GPU Driver
+        # 用Software & Updates安裝GPU Driver
+        # NVIDIA driver metapackage from nvidia-driver-460
         wget https://developer.download.nvidia.com/compute/cuda/11.2.0/local_installers/cuda_11.2.0_460.27.04_linux.run
         sudo sh cuda_11.2.0_460.27.04_linux.run
         # 只安裝cuda其他全部不安裝
