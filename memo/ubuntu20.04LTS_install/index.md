@@ -85,6 +85,7 @@
 
 ## Others
 - tensorflow 2.6.0
+- PyTorch 1.8.2(LTS) [with cuda 11.1 ver]
 
 ## 參考資料
 
