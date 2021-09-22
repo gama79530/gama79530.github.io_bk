@@ -4,7 +4,6 @@
 </script>
 
 # 分割配置
-
 1. EFI
    - 512 MB
    - 不確定要不要
@@ -19,7 +18,6 @@
 
 # 安裝軟體
 ## 指令安裝
-        
         # 安裝常用軟體 #
         sudo apt-get update
         sudo apt install ibus-chewing # 新酷音
@@ -77,18 +75,22 @@
         docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi
 
 ## 透過buntu software 安裝
-
 - skype
 
 ## 自行下載deb後透過 dpkg 安裝
-
 - chrome
 - vscode
 
-## Others
+# Others
+## 搭配版本
 - tensorflow 2.6.0
 - PyTorch 1.8.2(LTS) [with cuda 11.1 ver]
 
-## 參考資料
+## 移除cuda
+      sudo /usr/local/cuda/bin/cuda-uninstaller
+      sudo rm -rf /usr/local/cuda
+      sudo rm -rf /usr/local/cuda-11.2
+
+# 參考資料
 
 - [NVIDIA Docker support](https://github.com/NVIDIA/nvidia-docker)
