@@ -48,7 +48,7 @@
         # 只安裝cuda其他全部不安裝
 
         sudo nano ~/.bashrc
-        # 最後面增加下面幾段
+        # 最後面增加下面3行
         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
         export CUDA_HOME=/usr/local/cuda
         export PATH=$PATH:/usr/local/cuda/bin
@@ -56,8 +56,9 @@
         # 從官網下載cudnn 8.1.1 for cuda 11.2
         tar -zvxf cudnn-11.2-linux-x64-v8.1.1.33.tgz
         sudo cp cuda/include/*.h /usr/local/cuda/include/
-        sudo cp cuda/lib64/libcudnn* /usr/lib/cuda/lib64/
+        sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
         sudo chmod a+r /usr/local/cuda/include/cudnn.h
+        source ~/.bashrc
         
         # 安裝docker #
         sudo apt-get autoremove -y --purge docker-engine
