@@ -20,6 +20,7 @@
 ## 指令安裝
         # 安裝常用軟體 #
         sudo apt-get update
+        sudo apt update
         sudo apt install ibus-chewing # 新酷音
         sudo apt-get install vim # vim
         sudo apt-get install vlc # VLC media player
@@ -36,6 +37,7 @@
         sudo service ssh status # check ssh server state
         sudo systemctl stop cups-browsed # 關閉自動搜尋網路印表機
         sudo systemctl disable cups-browsed
+        sudo apt install curl
 
         # 用內建的Software & Updates安裝GPU Driver #
         # NVIDIA driver metapackage from nvidia-driver-460
@@ -66,6 +68,7 @@
         sudo apt install docker.io
         sudo systemctl start docker
         sudo systemctl enable docker
+        sudo groupadd docker
 
         # 安裝 NVIDIA Docker support #
         distribution=$(. /etc/os-release;echo $ID$VERSION_ID) && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - && curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
